@@ -1,7 +1,7 @@
 // routes/uploadRoutes.js
 import express from "express";
 import { uploadFiles,getUserFiles, deleteFileById ,downloadFile } from "../Controller/uploadController.js";
-import uploadS3 from "../Middlewares/s3Upload.js";
+import uploadS3 from "../middlewares/s3Upload.js";
 import checkAuth from "../middlewares/authcheck.js"; // to get req.userData
 
 const router = express.Router();
